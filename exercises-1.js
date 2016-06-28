@@ -5,7 +5,8 @@ function sum(num1, num2) {
   return num1 + num2;
 }
 // sum();
-
+console.assert(sum(3,1) === 4, 'three plus one equals 4');
+console.assert(sum(3,1) === 5, 'three plus one equals 5');
 
 // Q2
 // Write a function named `avg` that takes 3 parameters
@@ -14,7 +15,8 @@ function avg(num1, num2, num3) {
   return (num1 + num2 + num3)/3;
 }
 // avg();
-
+console.assert(avg(1,2,3) === 2, 'avg is 2');
+console.assert(avg(4,5,6) === 6, 'avg is 6');
 
 // Q3
 // Write a function called `getLength` that takes one
@@ -23,6 +25,8 @@ function getLength(string) {
   return string.length;
 }
 // getLength();
+console.assert(getLength("Amanda") === 6, 'Amanda is six length');
+console.assert(getLength("Amanda") === 5, 'Amanda is five length');
 
 
 
@@ -40,7 +44,8 @@ function greaterThan(num1, num2) {
   }
 }
 // greaterThan();
-
+console.assert(greaterThan(5,1) === 5, 'five is greater than one');
+console.assert(greaterThan(1,2) === 1, 'one is greater than two');
 
 
 
@@ -52,6 +57,9 @@ function greaterThan(num1, num2) {
 function greet(Name) {
   return 'Hello, ' + Name + '!';
 }
+
+console.assert(greet("Amanda") === 'Hello, Amanda!');
+console.assert(greet("Amanda") === 'Hello, World!', 'hello world');
 
 
 
@@ -69,3 +77,5 @@ function greet(Name) {
 function madLib(person, ingverb, adjective, noun) {
   return person + ' ' + 'likes ' + ingverb + ' ' + adjective + ' ' + noun + ' all day.';
 }
+
+console.assert(madLib("Amanda", "dancing", "tall", "cats" === "Amanda likes dancing tall cats all day."));
